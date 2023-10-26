@@ -22,7 +22,7 @@ main{
   gap:1rem;
   flex-direction:column;
   max-width:20rem;
-  height:24rem;
+  height:30rem;
 }
 .password-container{
   border-radius:0.25rem;
