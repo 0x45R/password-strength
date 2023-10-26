@@ -4,43 +4,29 @@
     <script type="text/javascript" src="js/modules/zxcvbn.js"></script>
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta charset="UTF-8">
     <title>Password Strength</title>
   </head>
   <body>
     <main>
-      <div class="tool-description">       
-        <svg xmlns="http://www.w3.org/2000/svg" class="lock-icon" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-         <path d="M5 11m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"></path>
-         <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-         <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path>
-      </svg>
-        <h1>Find out how strong is your password!</h1>
-        <h2>Type your password below!</h2>
-        <p>(don't worry it's safe and processed locally)</p>
+      <h1>Test your password!</h1>
+      <div class='password-container'>
+        <p class='password-container__char-count js-char-count'>0</p>
+        <input class='password-container__input js-password-input' type='password'>
+         <button class='password-container__show-button js-show-password-button'>
+          <i class='ti ti-eye-closed'></i>
+         </button>
       </div>
-
-      <div class="password-input-container">
-        <p class="password-characters">0</p>
-        <input type="text" class="password-input" placeholder="Type your password"></input>
-      </div>
-
-      <div class="password-description">
-        <div class="password-strength-container">
-          <p>Your password strength:</p>
-          <p class="password-strength bold">very weak</p>
+      <div class='hidden result-container js-result'>
+        <p class='js-score'>STRONG</p>
+        <hr>
+        <p>It would take <b class='js-crack-time'>3 million years</b> to crack your password</p>
+        <hr>
+        <p class='js-warning'></p>
+        <p class='js-suggestions-label'></p>
         </div>
-        <div class="password-time-to-crack-container">
-          <p>Time to crack:</p>
-          <p class="password-time-to-crack bold">less than a second</p>
-        </div>
-        <div class="password-suggestions-container">
-          <p>Suggestions:</p>
-          <p class="password-suggestions bold">Add some more shit</p>
-        </div>
-      </div>
     </main>
   </body>
 </html> 
