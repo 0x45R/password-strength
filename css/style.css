@@ -22,6 +22,7 @@ main{
   gap:1rem;
   flex-direction:column;
   max-width:20rem;
+  flex:1;
   height:30rem;
 }
 .password-container{
@@ -70,4 +71,22 @@ main{
   padding:0.5rem;
   font-size:1rem;
   background:transparent;
+}
+header{
+  display:flex;
+  justify-content:flex-start;
+  width:100%;
+  height:max-content;
+  font-size:1.25rem;
+}
+.header__return-button{
+  color: inherit;
+  text-decoration:none;
+}
+footer{
+  color: gray;
+  border-top:1px solid;
+  padding-top:1rem;
+  width:100%;
+  font-size:0.75rem;
 }
