@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <a class='header__return-button' href="https://0x45r.github.io"><i class='ti ti-arrow-back'></i></a>
+      <a aria-label='Return to home' class='header__return-button' href="https://0x45r.github.io"><i class='ti ti-arrow-back'></i></a>
     </header>
     <main>
       <h1>How strong is your password?</h1>
@@ -19,7 +19,7 @@
       <div class='password-container'>
         <p class='password-container__char-count js-char-count'>0</p>
         <input class='password-container__input js-password-input' type='password'>
-         <button class='password-container__show-button js-show-password-button'>
+         <button id='new-quote' aria-label='Generate new quote' class='password-container__show-button js-show-password-button'>
           <i class='ti ti-eye-closed'></i>
          </button>
       </div>
