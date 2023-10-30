@@ -9,7 +9,7 @@ body{
   display:flex;
   min-height:100vh;
   min-height:100dvh;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
   flex-direction:column;
   gap:1rem;
